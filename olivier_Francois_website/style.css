@@ -1,0 +1,138 @@
+/* Add your custom styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: right;
+    padding: 20px;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+/* navbar */
+.navbar {
+    background-color:blueviolet;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    padding: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        display: none;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color:rgba(137, 43, 226, 0.936);
+        position: absolute;
+        top: 45px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+
+
+/* Add your custom styles here */
+
+/* ... (previous styles) */
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+
+
+
+
+/* navbar-end */
+
+
+section {
+    margin: 20px;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    margin: 0;
+}
+
+.job ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.school {
+    margin-bottom: 20px;
+}
+
+.school h3 {
+    margin: 0;
+}
